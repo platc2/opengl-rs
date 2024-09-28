@@ -1,15 +1,20 @@
 # opengl-rs
 
 OpenGL wrappers & function pointer loader for the Rust programming language.
-This library uses [gl_generator](https://github.com/brendanzab/gl-rs) to generate load
+This library uses [gl_generator](https://github.com/brendanzab/gl-rs) to generate and load
 OpenGL function pointers.
+
+The functions in this repository have been structured according to the structure proposed in
+[docs.gl](https://docs.gl/).
+
+## Basic usage
+
+Add the dependency
 
 ```toml
 [dependencies]
 opengl_rs = "0.0.0"
 ```
-
-## Basic usage
 
 You can load the OpenGL functions and types like this:
 

@@ -1,21 +1,3 @@
-[package]
-name = "opengl-rs"
-repository = "https://github.com/platc2/opengl-rs"
-version = "0.0.0"
-
-[features]
-default = ["GL45"]
-GL33 = []
-GL40 = ["GL33"]
-GL41 = ["GL40"]
-GL42 = ["GL41"]
-GL43 = ["GL42"]
-GL44 = ["GL43"]
-GL45 = ["GL44"]
-
-GLES20 = []
-GLES30 = ["GLES20"]
-GLES31 = ["GLES30"]
-
-[build-dependencies]
-gl_generator = "0.14.0"
+[workspace]
+members = ["libraries/*"]
+resolver = "2"
